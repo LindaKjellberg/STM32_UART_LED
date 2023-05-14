@@ -9,7 +9,7 @@ RCC->APB1ENR |= 0x20000; //Activate UART2 by setting bit 17 in APB1ENR to 1.
 RCC->AHB1ENR |= 0x01; //Activate GPIOA by setting bit 0 in AHB1ENR to 1.
 
 // 3. Enable pins related to selected port for alternative function:
-GPIOA->MODER &= ~0x00F0; // Clears bits 4-7 in order to prepare pins PA2 and PA3
+GPIOA->MODER &= ~0x00F0; // Clears bits 4-7 in order to prepare pins PA2 and PA3, in case of any pre-defined settings on the platform that might disrupt 
   //& and ~ forces an inversion which leads to all the bits that are being denoted by hexadecimal value 1, is replaced in real value by 0
 
 GPIOA->MODER |= 0x00A0; // Set pins 5 and 7 to 1 in order to activate alternative functionality on pins PA2 och PA3
