@@ -1,3 +1,5 @@
+# STM32_UART_LED
+
 This project was a part of my Embedded Systems course, it is a UART-driver for the STM32F411x microcontroller wich controls a LED.
 
 The Documentation folder contains my report for this school project
@@ -8,10 +10,10 @@ The SourceCode folder contains UART drivers that enables LED to switch between f
 
 
 
-These are the functions used to run the drivers:
+## These are the functions used to run the drivers:
 
-USART2_Init: Initialize USART-protocol
+- `USART2_Init`: Initialize USART-protocol
 
-USART2_write: Send data using UART communication
+- `USART2_write`: Send data using UART communication
 
-USART2_read: Receive data using UART communication
+- `USART2_read`: Receive data using UART communication
